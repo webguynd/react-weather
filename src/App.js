@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Weather />
-      <a className="btn btn-primary" href="https://github.com/thewebguynd" target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+      <a className="btn btn-primary" href="https://github.com/webguynd/react-weather" target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
     </div>
   );
 }
