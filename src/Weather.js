@@ -6,7 +6,7 @@ class Weather extends React.Component {
 
         this.state = {
             description: null,
-            iconSrc: null,
+            iconSrc: '/loading.gif',
             currentTemp: null,
            
         }
@@ -20,7 +20,7 @@ class Weather extends React.Component {
                 .then(data => this.setState({
                     description: data['weather'][0]['description'],
                     iconSrc: data['weather'][0]['icon'],
-                    currentTemp: data['main']['temp']
+                    currentTemp: data['main']['temp'] * 9/5 + 32
                 }))
         })
     }
